@@ -26,6 +26,11 @@ namespace YooDaeun2693185{
             }
         }
      public:
+        Student(int I=1234567, int g='F', int s=0)
+        :ID{I}, grade{g}, score{s}
+        {
+            testID(); testgrade(); testscore();
+        }
         void input(){
             std::cout<<"enter ID: ";
             std::cin>>ID; testID();
@@ -35,7 +40,7 @@ namespace YooDaeun2693185{
             std::cin>>score; testscore();
         }
 
-        void print(){
+        void print() const{
             std::cout<<ID<<", "<<grade<<", "<<score<<"\n";
         };
         void setID(int newID){
@@ -50,13 +55,13 @@ namespace YooDaeun2693185{
             score=newscore;
             testscore();
         }
-        int getID(){
+        int getID() const{
             return ID;
         };
-        char getgrade(){
+        char getgrade() const{
             return grade;
         };
-        int getscore(){
+        int getscore() const{
             return score;
         };
     };
