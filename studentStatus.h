@@ -8,7 +8,7 @@ namespace YooDaeun2693185
         Student s;
         bool status;
         public:
-            studentStatus(student testS = student{6767676, 'C', 70}, bool testStatus=false)
+            studentStatus (Student testS = Student{6767676, 'C', 70}, bool testStatus=false)
             :s{testS}, status{testStatus}
             {}
 
@@ -18,10 +18,10 @@ namespace YooDaeun2693185
             std::cout<<"on school!\n";
         }
         else{
-            std::cout<<"NOT on schhool.\n";
+            std::cout<<"NOT on school.\n";
         }
     }
-    const student& getstudent() const{return s};
-    void setstudent(const student& testS){s=testS;}
+    const Student& getstudent() const{return s;}
+    void setstudent(const Student& testS){s=testS;}
     };
 }

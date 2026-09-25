@@ -26,7 +26,7 @@ namespace YooDaeun2693185{
             }
         }
      public:
-        Student(int I=1234567, int g='F', int s=0)
+        Student(int I=1234567, char g='F', int s=0)
         :ID{I}, grade{g}, score{s}
         {
             testID(); testgrade(); testscore();
